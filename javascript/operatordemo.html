@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operators demo</title>
+</head>
+<body>
+    <h1>operators demo</h1>
+    <pre id="demo"></pre>
+    <script>
+        let x=10;
+        let y=20;
+        let res=(x>y)?"hello":"bye";
+     
+        document.getElementById("demo").innerText=`
+        Arithmetic operators:
+        addition=${x+y}
+        subtraction=${x-y}
+        multiplication=${x*y}
+        division=${x/y}
+        mod=${x%y}
+        Assignment operators:
+        add assignment=${x+=2}
+        sub assignment=${x-=2}
+        mult assignment=${x*=2}
+        div assignment=${x/=2}
+        mod assignment=${x%=2}
+        relational operators demo:
+        >   (greater than)            : ${x > y}
+        <   (less than)               : ${x < y}
+        >=  (greater than or equal)   : ${x >= y}
+        <=  (less than or equal)      : ${x <= y}
+        ==  (equal to, value only)    : ${x == y}
+        === (strict equal, value+type): ${x === y}
+        !=  (not equal, value only)   : ${x != y}
+        !== (strict not equal)        : ${x !== y}
+        logical operators
+        Logical Operators:
+        (x < y && x < 15)  AND  => ${x < y && x <=y}
+        (x < y || x > 30)  OR   => ${x < y || x > 30}
+        !(x < y)           NOT  => ${!(x < y)}
+        Ternary operator =${res}
+        `;
+
+
+    </script>
+</body>
+</html>

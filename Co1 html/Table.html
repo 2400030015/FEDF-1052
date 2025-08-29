@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Element Representation</title>
+    <style>
+        thead
+        {
+            background-color: antiquewhite;
+            text-align: center;
+            color: darkblue;
+        }
+        tbody
+        {
+            background-color: plum;
+            text-align: center;
+            color: purple;
+        }
+        tfoot
+        {
+            background-color: chartreuse;
+            text-align: center;
+        }
+    </style>
+</head>
+<body align="center ">
+    <h1 >Student Data</h1>
+    <table border="2" align="center">
+        <caption>Student Marks Report</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">S.NO</th>
+                <th rowspan="2">NAME</th>
+                <th colspan="3">SUBJECTS</th>
+                <th rowspan="2">MARKS</th>
+                <th rowspan="2">GRADE</th>
+            </tr>
+            <tr>
+                <th>Java</th>
+                <th>FEDE</th>
+                <th>Python</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>1</td>
+                <td>Sireesha</td>
+                <td>85</td>
+                <td>90</td>
+                <td>88</td>
+                <td>263</td>
+                <td>A</td>
+            </tr>
+            <tr> 
+                <td>2</td>
+                <td>Dundi</td>
+                <td>90</td>
+                <td>95</td>
+                <td>96</td>
+                <td>281</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Saanvi</td>
+                <td>91</td>
+                <td>100</td>
+                <td>80</td>
+                <td>271</td>
+                <td>B</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="5">Average</td>
+            <td>90</td>
+            <td>-</td>
+        </tfoot>
+    </table>
+</body>
+</html>

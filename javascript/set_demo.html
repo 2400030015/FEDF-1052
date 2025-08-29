@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set Demo</title>
+</head>
+<body>
+    <h1>sets demo</h1>
+    <p id="demo"></p>
+    <script>
+        let numbers=new Set([10,20,30,20]);
+        document.getElementById("demo").innerHTML+="set Elements  after are<br/>";
+       for (let x of numbers)
+        document.getElementById("demo").innerHTML+=x+"<br/>";
+       numbers.add(45);
+       document.getElementById("demo").innerHTML+="set Elements  after are<br/>";
+        for (let x of numbers)
+        document.getElementById("demo").innerHTML+=x+"<br/>";
+       
+    </script>
+    
+
+    <p id="demo"></p>
+    <script>
+        let obj=new Map();
+        obj.set("name","venky");
+        obj.set("id",1234);
+        obj.set("sal",145.56);
+        
+        console.log(obj);
+        console.log(obj.get("id"));
+    </script>
+    <!DOCTYPE html>
+
+    <script>
+        const Person={
+            name:"venky",
+            id:56,
+            gender:"Male",
+            marks:56,
+            f1()
+            {
+                return "hello:"+this.name;
+            }          
+           
+        };
+        document.getElementById("demo").innerHTML=Person.name+"<br/>";
+        document.getElementById("demo").innerHTML+=Person.id+"<br/>";
+        document.getElementById("demo").innerHTML+=Person.marks+"<br/>";
+        document.getElementById("demo").innerHTML+=Person.f1();
+
+
+    </script>
+    
+
+
+
+</body>
+</html>
